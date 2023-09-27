@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(174,230,238);
+    background: linear-gradient(252deg, rgba(174,230,238,1) 0%, rgba(11,37,81,1) 100%);
+    display: grid;
+    place-items: center;
+}
+
+.calculadora{
+    background-color: #15173c;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 350px;
+    max-width: 100%;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    gap: .5rem;
+}
+
+.pantalla{
+    grid-column: 1 / -1;
+    background-color: #090C31;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.btn{
+    background-color: #15173c;
+    font-size: 1rem;
+    border-radius: .5rem;
+    color: white;
+    border: none;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #090c31;
+}
+
+.btn-borrar{
+    background-color: #E6394A;
+}
+.btn-borrar:hover{
+    background-color: #E65766;
+}
+
+#cero{
+    grid-column: span 2;
+}
+
+#igual{
+    grid-row: span 2;
+    background-color: #2a2e69;
+}
+#igual:hover{
+    background-color: #3b4089;
+}
